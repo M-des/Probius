@@ -1,10 +1,10 @@
 def aliases(hero):
 	#The Wiki redirects correctly most upper/lowercase results, but not all acronyms
-	if hero in ['lm','liming','li-ming','li ming','ming']:
+	if hero in ['lm','liming','li-ming','li ming','ming','lim']:
 		hero='Li-Ming'
 	elif hero in ['tlv','vikings','the lost vikings','lost vikings']:
 		hero='The_Lost_Vikings'
-	elif hero in ['graymane','gm']:
+	elif hero in ['graymane','gm','grey']:
 		hero='Greymane'
 	elif hero in ['alex','alexstrazsa']:
 		hero='Alexstrasza'
@@ -44,11 +44,11 @@ def aliases(hero):
 		hero='Gazlowe'
 	elif hero in ['zera']:
 		hero='Zeratul'
-	elif hero in ['kt','kael','kaelthas']:#He came to HotS first. Use KTZ for your beloved lich.
+	elif hero in ['kt','kael','kaelthas','kth']:#He came to HotS first. Use KTZ for your beloved lich.
 		hero="Kael'thas"
 	elif hero in ['ktz','kel','kelthuzad']:
 		hero="Kel'Thuzad"
-	elif hero in ['naz']:
+	elif hero in ['naz','zeebo']:
 		hero='Nazeebo'
 	elif hero in ['hammer','sgt']:
 		hero='Sgt._Hammer'
@@ -58,13 +58,13 @@ def aliases(hero):
 		hero='Zagara'
 	elif hero in ['aba']:
 		hero='Abathur'
-	elif hero in ['medihv']:
+	elif hero in ['medivh']:
 		hero='Medivh'
 	elif hero in ['tass']:
 		hero='Tassadar'
-	elif hero in ['anub','beetle','anubarak']:
+	elif hero in ['anub','beetle','anubarak','bug']:
 		hero="Anub'arak"
-	elif hero in ['jo','jojo']:
+	elif hero in ['jo','jojo','joh']:
 		hero='Johanna'
 	elif hero in ['mura']:
 		hero='Muradin'
@@ -72,7 +72,7 @@ def aliases(hero):
 		hero='Rehgar'
 	elif hero in ['azmo']:
 		hero='Azmodan'
-	elif hero in ['ilidan']:
+	elif hero in ['ilidan','illi']:
 		hero='Illidan'
 	elif hero in ['probe']:
 		hero='Probius'
@@ -88,12 +88,14 @@ def aliases(hero):
 		hero='Rexxar'
 	elif hero in ['jimmy']:
 		hero='Raynor'
-	elif hero in ['ker']:
+	elif hero in ['ker','kerri']:
 		hero='Kerrigan'
 	elif hero in ['goat','space goat']:
 		hero='Yrel'
 	elif hero in ['bow genji']:
 		hero='Hanzo'
+	elif hero in ['trash']:
+		hero='Nova'
 	else:
 		hero=hero.capitalize()#Emoji pages are case sensitive
 	return hero
